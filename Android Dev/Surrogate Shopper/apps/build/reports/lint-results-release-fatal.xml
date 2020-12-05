@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.0.0">
+
+    <issue
+        id="Instantiatable"
+        severity="Fatal"
+        message="This class should provide a default constructor (a public constructor with no arguments) (`com.example.scoops.RequestCardAdapter`)"
+        category="Correctness"
+        priority="6"
+        summary="Registered class is not instantiatable"
+        explanation="Activities, services, broadcast receivers etc. registered in the manifest file (or for custom views, in a layout file) must be &quot;instantiatable&quot; by the system, which means that the class must be public, it must have an empty public constructor, and if it&apos;s an inner class, it must be a static inner class."
+        errorLine1="        &lt;activity android:name=&quot;.RequestCardAdapter&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/xavier/AndroidStudioProjects/Scoops/app/src/main/AndroidManifest.xml"
+            line="25"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Instantiatable"
+        severity="Fatal"
+        message="`RequestCardAdapter` must extend android.app.Activity"
+        category="Correctness"
+        priority="6"
+        summary="Registered class is not instantiatable"
+        explanation="Activities, services, broadcast receivers etc. registered in the manifest file (or for custom views, in a layout file) must be &quot;instantiatable&quot; by the system, which means that the class must be public, it must have an empty public constructor, and if it&apos;s an inner class, it must be a static inner class."
+        errorLine1="        &lt;activity android:name=&quot;.RequestCardAdapter&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/xavier/AndroidStudioProjects/Scoops/app/src/main/AndroidManifest.xml"
+            line="25"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        severity="Fatal"
+        message="`@+id/bottom_navigation` is not a sibling in the same `RelativeLayout`"
+        category="Correctness"
+        priority="6"
+        summary="Invalid Constraints"
+        explanation="Layout constraints in a given `ConstraintLayout` or `RelativeLayout` should reference other views within the same relative layout (but not itself!)"
+        errorLine1="        android:layout_above=&quot;@+id/bottom_navigation&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/xavier/AndroidStudioProjects/Scoops/app/src/main/res/layout/activity_vol_details.xml"
+            line="13"
+            column="9"/>
+    </issue>
+
+</issues>
