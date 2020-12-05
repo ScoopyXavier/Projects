@@ -1,2 +1,2 @@
 # My Android Applications 
-## created using Android Studio (Java)
+## Created using Android Studio (Java)
