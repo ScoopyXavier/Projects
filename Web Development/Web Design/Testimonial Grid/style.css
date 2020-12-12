@@ -1,0 +1,113 @@
+body{background-color: hsl(210, 46%, 95%);}
+.grid{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-gap:2em;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+h4{font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 500; font-size:}
+h3{font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 600; margin: 0 30px 0 30px; font-size: 20px;}
+
+p{
+  font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 500;
+  font-size: 13px;
+  margin: 20px 30px 30px 30px;
+  line-height: 1.8;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+.verified{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
+}
+
+img{
+  border-radius: 100%;
+  margin: 30px 0 0 30px;
+  display: inline-block;
+  width: 30px;
+  height: auto;
+  border: 2px solid white;
+  float: left;
+}
+
+.title{margin: 0;}
+.profile{border-radius: 10px; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);}
+
+.side{
+  display: inline-block;
+  line-height: 1;
+  margin: 30px 0 10px 15px;
+  top: 0;
+}
+
+.jonathan{
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3;
+}
+
+.jonathan > p{color: hsl(0, 0%, 81%); opacity: 90%;}
+.jonathan > h3{color: white;}
+
+.patrick{
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2/4;
+}
+
+.patrick > p{color: hsl(0, 0%, 81%); opacity: 70%;}
+.patrick > h3{color: white;}
+.side > h4 {color: white;}
+.patrick > img{border-color: hsl(263, 55%, 52%);}
+
+
+.daniel{
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-position: top right 100px;
+  background-repeat: no-repeat;
+  grid-column: 1/3;
+}
+
+.daniel > p{color: hsl(0, 0%, 81%); opacity: 70%;}
+.daniel > h3{color: white;}
+.side > h4 {color: white;}
+.daniel > img{border-color: hsl(263, 55%, 65%);}
+
+.jeanette{
+  background-color: white;
+  grid-row: 2;
+}
+
+.jeanette > h3{color: hsl(217, 19%, 35%);}
+.jeanette > .side > h4{color: hsl(217, 19%, 35%);}
+.jeanette > .side > p{color: hsl(217, 19%, 35%); opacity: 50%;}
+
+.kira{
+  background-color: white;
+  grid-row: 1/3;
+  grid-column: 4;
+  border-radius: 1.5%;
+}
+
+.kira > h3{color: hsl(217, 19%, 35%);}
+.kira > .side > h4{color: hsl(217, 19%, 35%);}
+.kira > .side > p{color: hsl(217, 19%, 35%); opacity: 50%;}
+
+.attribution{
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
